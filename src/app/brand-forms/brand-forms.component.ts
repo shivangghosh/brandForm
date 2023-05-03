@@ -10,9 +10,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class BrandFormsComponent implements OnInit {
   formData: any;
 
-  constructor(private http: HttpClient) {
-
-  }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
 
@@ -113,7 +111,7 @@ export class BrandFormsComponent implements OnInit {
 
         // If all mandatory fields have been filled in, submit the form
         const payload = { ...formData };
-        console.log(payload); // Replace with your submission logic
+        alert('Form Submitted Successfully!!!') // Replace with your submission logic
       });
 
 
